@@ -1,0 +1,239 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#0b1517;
+    color: white;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.navbar-upper{
+    background-color: black;
+    border-radius: 5px;
+    height: 5rem;
+    width: 100%;
+    /* flex-direction: column; */
+    position: fixed;
+    z-index: 10;
+}
+.upper-items ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    line-height: 41px;
+    font-size: 18px;
+    /* opacity: 0.5; */
+}
+.upper-items ul i{
+    display: none;
+}
+
+.upper-items ul li{
+    opacity: 0.8;
+    font-weight: bold;
+}
+.upper-items ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 1;
+}
+.upper-items ul form input{
+    padding: 0.7rem 8rem;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 2rem;
+    font-weight: 700;
+}
+
+.upper-items li{
+   list-style: none;
+}
+
+@media (max-width:1045px) {
+    .upper-items li{
+        display: none;
+    }
+    .upper-items ul i{
+        display: block;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.side-one{
+    height: 100vh;
+    background-color: black;
+}
+
+.navbar-side{
+    width:16rem;
+    margin-top: 64px;
+}   
+
+.side-items1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.3rem auto;
+    gap: 10px;
+    padding: 30px;
+    transform: scale(1.05);
+}
+
+
+.side-items1 a{
+    text-decoration: none;
+    color: white;
+    /* border: 1px solid white; */
+    padding: 5px 15px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+.side-items1 a:hover{
+    /* border: 1px solid white; */
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
+.side-items1 .name{
+    color: rgba(220, 220, 220,);
+}
+.side-items1 a i{
+    padding-right: 10px;
+}
+@media (max-width:510px) {
+    .navbar-side{
+        display: none;
+    }
+}
+.main-box{
+    flex: 1;
+    overflow: auto;
+    margin-top: 4.8rem;
+    margin-bottom: 4.5rem;
+    scrollbar-width: none;
+}
+
+.main-box{
+    scrollbar-width: thin;
+    scrollbar-color: gray black; 
+}
+
+.cards{
+    background-color: rgba(128, 128, 128, 0.611);
+    width: fit-content;
+    border-radius: 10px;
+    margin: 10px;
+    height: fit-content;
+    padding: 10px;
+    opacity: 0.8;
+}
+.cards:hover{
+    opacity: 1;
+    transform: scale(1.03);
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.89);
+    color: black;
+    cursor: pointer;
+}
+.card-img{
+   width: 100%;
+   height: 170px;
+   border-radius: 10px;
+}
+.card-info{
+    padding: 5px;
+}
+.card-head{
+ display: block;
+ text-align: center;
+ font-weight: 600;
+}
+
+.main-content{
+    padding: 0px 20px;
+}
+
+.content-inside{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fotter{
+    height: 4.5rem;
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+@media (max-width:970px) {
+    .fotter-tags{
+        margin-left: -150px;
+        transition: 0.3s;
+    }
+}
+.fotter-tags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    /* line-height: 20px; */
+}
+.fotter-tags a{
+    color: white;
+    margin: 1rem;
+}
+.fotter-tags i{
+    font-size: 25px;
+}
+.volume{
+   position: absolute;
+   right: 0;
+}
+@media (max-width:970px) {
+    .volume{
+      right: 50px;
+      transition: 0.3s;
+    }
+}
+.volume input{
+    margin-left: 1.2rem;
+    position: relative;
+    top: -0.5rem;
+    appearance: none;
+    cursor: pointer;
+}
+.volume input::-webkit-slider-runnable-track{
+    appearance: none;
+    height: 0.2rem;
+}
+.volume input::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: -6px;
+}
+.down-img{
+    border: 2px solid white;
+    position: absolute;
+    left: 0;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    border-radius: 0.5rem;
+    width: 40px;
+    height: 40px;
+    margin-left: 2rem;
+}
